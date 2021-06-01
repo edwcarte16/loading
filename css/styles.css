@@ -1,0 +1,58 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#boxFlag{
+    height: 100vh;
+    width: 100%;
+
+}
+.colors{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.colors:first-child{
+    background-color: yellow;
+    height: 50%;
+}
+
+.colors:nth-child(2), .colors:nth-child(3){
+    height: 25%;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+#box_loading{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+}
+#loading{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border: 8px solid rgba(0, 0, 0, 0.541);
+    border-top: 8px solid #286291;
+    border-radius: 100%;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    animation: rotate 1.2s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: translate(50%, -50%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(50%, -50%) rotate(360deg);
+    }
+}
